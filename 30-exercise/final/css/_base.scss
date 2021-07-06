@@ -1,0 +1,36 @@
+$primary-color: #7159c1;
+$primary-color1: #4b4b4b;
+$primary-color2: #fff;
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+html {
+    /* a cada 1rem será considera 10px */
+    font-size: 62.5%;
+}
+
+html,
+body {
+    height: 100vh;
+    font-family: "Source Sans Pro";
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+h2 {
+    @include font-properties($primary-color1,3.6rem, 4.6rem );   
+}
+
+h3 {
+    @include font-properties($primary-color1,2.8rem, 3.8rem );  
+}
